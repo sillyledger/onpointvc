@@ -21,9 +21,9 @@ export function Main() {
           — operator-led venture capital &amp; micro-pe
         </div>
         <h1 className="font-display text-[clamp(44px,7.4vw,100px)] font-medium leading-[0.98] tracking-[-0.02em] lowercase">
-          capital,
+          capital that
           <br />
-          operated<span style={{ color: "var(--amber)" }}>.</span>
+          compounds<span style={{ color: "var(--amber)" }}>.</span>
         </h1>
         <p className="mt-7 max-w-[410px] text-[18px] leading-[1.7] text-[var(--dim)]">
           We built and sold software before we wrote a check. Now we back the
