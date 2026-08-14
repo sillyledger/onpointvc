@@ -8,6 +8,7 @@ const fields = [
 export function Panel() {
   return (
     <div
+      id="portfolio"
       className="hidden min-[900px]:flex flex-col justify-between border-r border-[var(--hair)] bg-panel px-9 py-[34px]"
     >
       <Wordmark />
@@ -26,13 +27,6 @@ export function Panel() {
             <div className="text-[13px] text-[var(--text)]">{field.value}</div>
           </div>
         ))}
-      </div>
-
-      <div
-        id="portfolio"
-        className="font-mono text-[10.5px] leading-[2] tracking-[0.02em] text-[var(--dim)]"
-      >
-        TWO.SO
       </div>
     </div>
   );

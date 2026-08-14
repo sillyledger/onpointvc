@@ -21,12 +21,11 @@ export function Main() {
           — operator-led venture capital &amp; micro-pe
         </div>
         <h1 className="font-display text-[clamp(44px,7.4vw,100px)] font-medium leading-[0.98] tracking-[-0.02em] lowercase">
-          capital that
+          capital,
           <br />
-          ships.
+          operated<span style={{ color: "var(--amber)" }}>.</span>
         </h1>
-        <div className="my-7 h-px w-14 bg-[var(--hair)]" />
-        <p className="max-w-[410px] text-[15px] leading-[1.7] text-[var(--dim)]">
+        <p className="mt-7 max-w-[410px] text-[15px] leading-[1.7] text-[var(--dim)]">
           We built and sold software before we wrote a check. Now we back the
           ones doing the same — and buy the ones already making money.
         </p>
