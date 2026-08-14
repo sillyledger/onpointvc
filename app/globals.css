@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+:root {
+  --field: #1b2ae0;
+  --panel: #121b8e;
+  --deep: #141c86;
+  --text: #f5f4ec;
+  --dim: rgba(245, 244, 236, 0.62);
+  --hair: rgba(245, 244, 236, 0.22);
+  --amber: #ffb240;
+}
+
+@theme inline {
+  --color-field: var(--field);
+  --color-panel: var(--panel);
+  --color-deep: var(--deep);
+  --color-text: var(--text);
+  --color-dim: var(--dim);
+  --color-hair: var(--hair);
+  --color-amber: var(--amber);
+
+  --font-display: var(--font-reddit-sans);
+  --font-sans: var(--font-plex-sans);
+  --font-mono: var(--font-plex-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--field);
+  color: var(--text);
+  font-family: var(--font-plex-sans), sans-serif;
+}
