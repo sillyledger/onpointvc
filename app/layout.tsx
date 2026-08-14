@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Reddit_Sans, IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google";
+import { Reddit_Sans, IBM_Plex_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
 const redditSans = Reddit_Sans({
@@ -8,10 +9,12 @@ const redditSans = Reddit_Sans({
   subsets: ["latin"],
 });
 
-const plexSans = IBM_Plex_Sans({
+const plexSans = localFont({
   variable: "--font-plex-sans",
-  weight: ["400", "500"],
-  subsets: ["latin"],
+  src: [
+    { path: "./fonts/IBMPlexSans-400.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/IBMPlexSans-500.woff2", weight: "500", style: "normal" },
+  ],
 });
 
 const plexMono = IBM_Plex_Mono({
