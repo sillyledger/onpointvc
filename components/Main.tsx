@@ -25,7 +25,7 @@ export function Main() {
           <br />
           operated<span style={{ color: "var(--amber)" }}>.</span>
         </h1>
-        <p className="mt-7 max-w-[410px] text-[15px] leading-[1.7] text-[var(--dim)]">
+        <p className="mt-7 max-w-[410px] text-[18px] leading-[1.7] text-[var(--dim)]">
           We built and sold software before we wrote a check. Now we back the
           ones doing the same — and buy the ones already making money.
         </p>

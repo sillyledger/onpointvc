@@ -10,7 +10,7 @@ export function ThesisSpread() {
         </div>
 
         <div className="grid grid-cols-1 gap-[34px] min-[900px]:grid-cols-2 min-[900px]:gap-16">
-          <div className="text-[15.5px] leading-[1.8] text-[var(--dim)]">
+          <div className="text-[17px] leading-[1.7] text-[var(--dim)]">
             <p className="mb-5">
               <span className="float-left pr-2.5 pt-1.5 font-display text-[74px] font-medium leading-[0.8] text-[var(--text)]">
                 W
@@ -39,7 +39,7 @@ export function ThesisSpread() {
                 ON BUYOUTS
               </div>
             </div>
-            <p className="mt-[26px] text-[15.5px] leading-[1.8] text-[var(--dim)]">
+            <p className="mt-[26px] text-[17px] leading-[1.7] text-[var(--dim)]">
               If a founder wants liquidity instead of a board seat,
               we&apos;re the exit. No process, no auction — a term sheet in
               fourteen days and an operator on the other side of the table
