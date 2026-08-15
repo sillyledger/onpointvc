@@ -33,23 +33,3 @@ body {
   color: var(--text);
   font-family: var(--font-plex-sans), sans-serif;
 }
-
-@keyframes lifeline-pulse {
-  0%,
-  100% {
-    opacity: 0.55;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-.lifeline-dot {
-  animation: lifeline-pulse 2.5s ease-in-out infinite;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .lifeline-dot {
-    animation: none;
-  }
-}
