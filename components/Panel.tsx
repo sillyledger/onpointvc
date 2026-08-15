@@ -17,17 +17,19 @@ export function Panel() {
     >
       <Wordmark />
 
-      <nav className="mt-[70px] flex flex-col gap-[14px] font-mono text-[12.5px] tracking-[0.1em]">
-        {navLinks.map((link) => (
-          <a
-            key={link.label}
-            href={link.href}
-            className="text-[var(--text)] no-underline hover:text-[var(--amber)]"
-          >
-            {link.label}
-          </a>
-        ))}
-      </nav>
+      <div className="flex flex-1 items-center">
+        <nav className="flex flex-col gap-[14px] font-mono text-[12.5px] tracking-[0.1em]">
+          {navLinks.map((link) => (
+            <a
+              key={link.label}
+              href={link.href}
+              className="text-[var(--text)] no-underline hover:text-[var(--amber)]"
+            >
+              {link.label}
+            </a>
+          ))}
+        </nav>
+      </div>
     </div>
   );
 }
