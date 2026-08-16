@@ -21,7 +21,7 @@ const columns = [
 
 export function SiteFooter() {
   return (
-    <footer className="flex flex-wrap gap-x-20 gap-y-10 bg-field px-[22px] py-12 min-[900px]:px-12">
+    <footer className="flex flex-wrap justify-center gap-x-20 gap-y-10 bg-field px-[22px] py-12 min-[900px]:px-12">
       {columns.map((column, i) => (
         <div
           key={i}
