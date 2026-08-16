@@ -19,8 +19,6 @@ export function Main() {
           read thesis →
         </a>
       </div>
-
-      <div className="font-mono text-[11px] text-[var(--dim)]">EST. 2026</div>
     </div>
   );
 }

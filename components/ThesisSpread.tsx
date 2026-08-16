@@ -2,7 +2,7 @@ export function ThesisSpread() {
   return (
     <div
       id="thesis"
-      className="border-t border-[var(--hair)] px-[22px] py-16 min-[900px]:px-12 min-[900px]:pt-[100px] min-[900px]:pb-[110px]"
+      className="px-[22px] py-16 min-[900px]:px-12 min-[900px]:pt-[100px] min-[900px]:pb-[110px]"
     >
       <div className="mx-auto max-w-[1020px]">
         <div className="mb-14 font-mono text-xs tracking-[0.08em] text-[var(--dim)]">
