@@ -1,13 +1,53 @@
+import Link from "next/link";
+
+const columns = [
+  [
+    { href: "#", label: "About" },
+    { href: "#", label: "Thesis" },
+    { href: "#", label: "Team" },
+    { href: "/contact", label: "Contact" },
+  ],
+  [
+    { href: "#", label: "OP Fund" },
+    { href: "#", label: "Acquisitions" },
+    { href: "#", label: "Studio" },
+    { href: "#", label: "Absurdity Projects" },
+  ],
+  [
+    { href: "#", label: "Privacy" },
+    { href: "#", label: "Terms" },
+  ],
+];
+
 export function SiteFooter() {
   return (
-    <div className="px-[22px] py-[22px] min-[900px]:px-12 min-[900px]:py-[26px]">
-      <div className="mx-auto max-w-[1020px] border-t border-[var(--hair)]">
-        <div className="flex flex-wrap items-center justify-end gap-3 pt-[22px] font-mono text-[11px] text-[var(--dim)] min-[900px]:pt-[26px]">
-          <a href="mailto:jm@onpointvc.com" className="text-[var(--dim)]">
-            jm@onpointvc.com
-          </a>
+    <footer className="flex flex-wrap gap-x-20 gap-y-10 bg-field px-[22px] py-12 min-[900px]:px-12">
+      {columns.map((column, i) => (
+        <div
+          key={i}
+          className="flex flex-col gap-3 font-mono text-[12.5px] tracking-[0.1em]"
+        >
+          {column.map((link) =>
+            link.href === "/contact" ? (
+              <Link
+                key={link.label}
+                href={link.href}
+                className="text-[var(--text)] no-underline hover:text-[var(--amber)]"
+              >
+                {link.label}
+              </Link>
+            ) : (
+              <a
+                key={link.label}
+                href={link.href}
+                className="text-[var(--dim)] no-underline hover:text-[var(--amber)]"
+              >
+                {link.label}
+              </a>
+            ),
+          )}
         </div>
-      </div>
-    </div>
+      ))}
+    </footer>
   );
 }
