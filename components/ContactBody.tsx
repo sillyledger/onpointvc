@@ -1,6 +1,6 @@
 export function ContactBody() {
   return (
-    <div className="flex h-full flex-col justify-end bg-field px-[22px] py-12 min-[900px]:px-12 min-[900px]:py-16">
+    <div className="flex flex-col justify-end bg-field px-[22px] py-12 min-[900px]:px-12 min-[900px]:py-16">
       <p className="max-w-[460px] text-[18px] leading-[1.7] text-[var(--dim)]">
         one email, no gatekeeping. what the company does, revenue if it&apos;s
         real, why now.
