@@ -9,9 +9,9 @@ export const metadata: Metadata = {
 
 export default function Contact() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex flex-col">
       <ContactNav />
-      <div className="grid flex-1 grid-cols-1 min-[900px]:grid-cols-[1fr_1.55fr]">
+      <div className="grid grid-cols-1 min-[900px]:grid-cols-[1fr_1.55fr] min-[900px]:min-h-[620px]">
         <ContactHeader />
         <ContactBody />
       </div>

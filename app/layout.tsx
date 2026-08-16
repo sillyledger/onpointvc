@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Reddit_Sans, IBM_Plex_Mono } from "next/font/google";
 import localFont from "next/font/local";
+import { SiteFooter } from "@/components/SiteFooter";
 import "./globals.css";
 
 const redditSans = Reddit_Sans({
@@ -37,6 +38,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="bg-field text-text font-sans antialiased">
         {children}
+        <SiteFooter />
       </body>
     </html>
   );
