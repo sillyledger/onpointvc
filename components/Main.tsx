@@ -1,7 +1,7 @@
 export function Main() {
   return (
     <div className="flex flex-col px-[22px] py-6 min-[900px]:px-12 min-[900px]:py-[34px]">
-      <div className="flex flex-1 flex-col justify-center max-w-[880px]">
+      <div className="flex flex-1 flex-col justify-center max-w-[960px]">
         <div className="relative">
           <h1 className="relative z-[2] font-display text-[clamp(44px,7.4vw,100px)] font-extrabold leading-[0.98] tracking-[-0.02em] lowercase">
             we&apos;re bold, absurd,
@@ -28,14 +28,15 @@ export function Main() {
           </div>
         </div>
         <div className="mt-7 grid grid-cols-[1fr_auto] items-end gap-[60px]">
-          <p className="max-w-[410px] text-[20px] leading-[1.7] text-[var(--dim)]">
-            We built and sold software before we wrote a check. Now we fund
-            the experiments too weird to pitch anywhere else, and buy up the
-            tiny, profitable ideas nobody else wants to underwrite.
+          <p className="max-w-[700px] text-[20px] leading-[1.7] text-[rgba(245,244,236,0.96)]">
+            Founder-led and self-funded. We back absurd ideas and weird
+            software, build our own experiments in-house, and buy the tiny
+            businesses too small for anyone else&apos;s fund. All through our
+            own capital, not someone else&apos;s LP checks.
           </p>
           <a
             href="#"
-            className="inline-block w-fit border-b border-[rgba(245,244,236,0.5)] pb-[3px] font-mono text-[13px] text-[var(--text)] hover:border-[var(--text)]"
+            className="inline-block w-fit border-b border-[var(--amber)] pb-[5px] font-display text-[14px] font-medium text-[var(--text)] no-underline"
           >
             Absurdity Projects →
           </a>
