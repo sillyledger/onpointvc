@@ -5,7 +5,7 @@ import { BoldDecisions } from "@/components/BoldDecisions";
 export default function Home() {
   return (
     <>
-      <div className="grid min-h-screen min-[900px]:grid-cols-[1fr_1.55fr]">
+      <div className="grid min-h-screen min-[900px]:grid-cols-[300px_1fr]">
         <Panel />
         <Main />
       </div>

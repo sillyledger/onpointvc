@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function Contact() {
   return (
-    <div className="grid min-h-screen min-[900px]:grid-cols-[1fr_1.55fr]">
+    <div className="grid min-h-screen min-[900px]:grid-cols-[300px_1fr]">
       <ContactPanel />
       <ContactMain />
     </div>
