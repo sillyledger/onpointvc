@@ -2,20 +2,20 @@ import Link from "next/link";
 
 const columns = [
   [
-    { href: "#", label: "About" },
-    { href: "#", label: "Thesis" },
-    { href: "#", label: "Team" },
-    { href: "/contact", label: "Contact" },
+    { href: "#", label: "ABOUT" },
+    { href: "#", label: "THESIS" },
+    { href: "#", label: "TEAM" },
+    { href: "/contact", label: "CONTACT" },
   ],
   [
-    { href: "#", label: "OP Fund" },
-    { href: "#", label: "Acquisitions" },
-    { href: "#", label: "Studio" },
-    { href: "#", label: "Absurdity Projects" },
+    { href: "#", label: "OP FUND" },
+    { href: "#", label: "ACQUISITIONS" },
+    { href: "#", label: "STUDIO" },
+    { href: "#", label: "ABSURDITY PROJECTS" },
   ],
   [
-    { href: "#", label: "Privacy" },
-    { href: "#", label: "Terms" },
+    { href: "#", label: "PRIVACY" },
+    { href: "#", label: "TERMS" },
   ],
 ];
 
