@@ -9,7 +9,7 @@
   --hair: rgba(245, 244, 236, 0.22);
   --amber: #ffb240;
   --paper: #f3f1ea;
-  --ink: #121b8e;
+  --ink: #1b1a14;
   --ink-dim: rgba(18, 27, 142, 0.5);
 }
 
@@ -28,6 +28,7 @@
   --font-display: var(--font-reddit-sans);
   --font-sans: var(--font-plex-sans);
   --font-mono: var(--font-plex-mono);
+  --font-inter: var(--font-inter);
 }
 
 html {

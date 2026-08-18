@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Reddit_Sans, IBM_Plex_Mono } from "next/font/google";
+import { Reddit_Sans, IBM_Plex_Mono, Inter } from "next/font/google";
 import localFont from "next/font/local";
 import { SiteFooter } from "@/components/SiteFooter";
 import "./globals.css";
@@ -24,6 +24,12 @@ const plexMono = IBM_Plex_Mono({
   subsets: ["latin"],
 });
 
+const inter = Inter({
+  variable: "--font-inter",
+  weight: ["500"],
+  subsets: ["latin"],
+});
+
 export const metadata: Metadata = {
   title: "OnPoint VC",
   description:
@@ -34,7 +40,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${redditSans.variable} ${plexSans.variable} ${plexMono.variable}`}
+      className={`${redditSans.variable} ${plexSans.variable} ${plexMono.variable} ${inter.variable}`}
     >
       <body className="bg-field text-text font-sans antialiased">
         {children}
