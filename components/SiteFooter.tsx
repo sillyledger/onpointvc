@@ -4,7 +4,6 @@ const columns = [
   [
     { href: "#", label: "ABOUT" },
     { href: "#", label: "THESIS" },
-    { href: "#", label: "TEAM" },
     { href: "/contact", label: "CONTACT" },
   ],
   [

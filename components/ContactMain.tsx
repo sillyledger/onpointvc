@@ -6,7 +6,6 @@ const navLinks = [
   { href: "/thesis", label: "THESIS" },
   { href: "/op-fund", label: "OP FUND" },
   { href: "/studio", label: "STUDIO" },
-  { href: "/#team", label: "TEAM" },
 ];
 
 const routes = [
