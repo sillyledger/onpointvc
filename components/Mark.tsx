@@ -12,8 +12,7 @@ export function Mark({ size = 34 }: { size?: number }) {
           width: inner,
           height: inner,
           borderRadius: radius,
-          background: "var(--field)",
-          boxShadow: "0 0 0 1px var(--hair)",
+          background: "var(--text)",
         }}
       />
       <span
