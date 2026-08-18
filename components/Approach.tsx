@@ -8,7 +8,7 @@ export function Approach() {
           same conviction, and both funded entirely by us.
         </p>
         <a
-          href="#op-fund"
+          href="/op-fund"
           className="font-inter mt-14 inline-block rounded-full border-[1.5px] border-[var(--amber)] bg-transparent px-[30px] py-[17px] text-[16px] font-medium text-[var(--ink)] no-underline transition-colors hover:bg-[var(--amber)]"
         >
           Our approach

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Wordmark } from "./Wordmark";
 
 const navLinks = [
-  { href: "/#op-fund", label: "OP FUND" },
+  { href: "/op-fund", label: "OP FUND" },
   { href: "/#acquisitions", label: "ACQUISITIONS" },
   { href: "/#studio", label: "STUDIO" },
   { href: "/#team", label: "TEAM" },
