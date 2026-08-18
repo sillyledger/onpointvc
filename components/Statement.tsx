@@ -16,7 +16,7 @@ export function Statement() {
               get backed with the same conviction. That&apos;s the whole model.
             </p>
             <a
-              href="/studio"
+              href="/absurdity-projects"
               className="mt-12 inline-flex items-center gap-3 rounded-full border-[1.5px] border-[var(--ink)] px-[30px] py-[17px] font-sans text-[16px] font-medium text-[var(--ink)] no-underline transition-colors hover:bg-[var(--ink)] hover:text-[var(--paper)]"
             >
               See the Absurdity Index

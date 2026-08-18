@@ -9,7 +9,7 @@ const columns = [
   [
     { href: "#", label: "OP FUND" },
     { href: "#", label: "STUDIO" },
-    { href: "#", label: "ABSURDITY PROJECTS" },
+    { href: "/absurdity-projects", label: "ABSURDITY PROJECTS" },
   ],
   [
     { href: "#", label: "PRIVACY" },
