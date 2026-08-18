@@ -12,20 +12,11 @@ export function Portfolio() {
         <div className="mb-11 font-mono text-[12px] font-medium tracking-[0.16em] text-[var(--ink-dim)]">
           PORTFOLIO
         </div>
-        <div className="mb-14 flex items-end justify-between gap-[60px] max-[900px]:flex-col max-[900px]:items-start max-[900px]:gap-8">
+        <div className="mb-14">
           <p className="max-w-[680px] font-display text-[clamp(20px,2.1vw,28px)] font-normal leading-[1.5] tracking-[-0.01em] text-[var(--ink)]">
-            Four companies we&apos;ve built or backed with our own capital
-            &mdash; each one proof the model actually works.
+            Companies we&apos;ve built or backed with our own capital. Each
+            one proves the model works. Unhinged or not.
           </p>
-          <a
-            href="#"
-            className="inline-flex shrink-0 items-center gap-3 rounded-full border-[1.5px] border-[var(--amber)] px-[30px] py-[17px] font-sans text-[16px] font-medium text-[var(--ink)] no-underline transition-colors hover:bg-[var(--amber)]"
-          >
-            See All Companies
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-4 w-4">
-              <path d="M5 12h14M13 5l7 7-7 7" />
-            </svg>
-          </a>
         </div>
         <div className="grid grid-cols-2 gap-5 max-[768px]:grid-cols-1">
           {companies.map((c) => (

@@ -32,7 +32,7 @@ export function SiteFooter() {
               <Link
                 key={link.label}
                 href={link.href}
-                className="text-[var(--ink)] no-underline hover:text-[var(--amber)]"
+                className="text-[var(--ink)] no-underline visited:text-[var(--ink)] hover:text-[var(--amber)]"
               >
                 {link.label}
               </Link>
@@ -40,7 +40,7 @@ export function SiteFooter() {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-[var(--ink-dim)] no-underline hover:text-[var(--amber)]"
+                className="text-[var(--ink-dim)] no-underline visited:text-[var(--ink-dim)] hover:text-[var(--amber)]"
               >
                 {link.label}
               </a>

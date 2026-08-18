@@ -15,7 +15,7 @@ export function InvestmentFocus() {
           </p>
           <a
             href="#thesis"
-            className="inline-flex shrink-0 items-center gap-3 rounded-full border-[1.5px] border-[var(--amber)] px-[30px] py-[17px] font-sans text-[16px] font-medium text-[var(--ink)] no-underline transition-colors hover:bg-[var(--amber)]"
+            className="inline-flex shrink-0 items-center gap-3 rounded-full border-[1.5px] border-[var(--ink)] px-[30px] py-[17px] font-sans text-[16px] font-medium text-[var(--ink)] no-underline transition-colors hover:bg-[var(--ink)] hover:text-[var(--paper)]"
           >
             See Full Thesis
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-4 w-4">
