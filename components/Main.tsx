@@ -1,15 +1,15 @@
 export function Main() {
   return (
-    <div className="flex flex-col px-[22px] py-6 min-[900px]:px-12 min-[900px]:py-[34px]">
+    <div className="flex flex-col px-12 py-[34px] max-[768px]:px-6 max-[768px]:py-8">
       <div className="flex flex-1 flex-col justify-center max-w-[960px]">
         <div className="relative">
-          <h1 className="relative z-[2] font-display text-[clamp(44px,7.4vw,100px)] font-extrabold leading-[0.98] tracking-[-0.02em] lowercase">
+          <h1 className="relative z-[2] font-display text-[clamp(44px,7.4vw,100px)] font-extrabold leading-[0.98] tracking-[-0.02em] lowercase max-[768px]:text-[clamp(34px,9vw,38px)]">
             we&apos;re bold, absurd,
             <br />
             and driven.
           </h1>
           <div
-            className="pointer-events-none absolute left-0 right-0 z-[1] overflow-visible"
+            className="pointer-events-none absolute left-0 right-0 z-[1] overflow-visible max-[768px]:hidden"
             style={{ bottom: "0.22em", height: 70 }}
           >
             <svg
@@ -27,8 +27,8 @@ export function Main() {
             </svg>
           </div>
         </div>
-        <div className="mt-7 grid grid-cols-[1fr_auto] items-end gap-[60px]">
-          <p className="max-w-[700px] text-[20px] leading-[1.7] text-[rgba(245,244,236,0.96)]">
+        <div className="mt-7 grid grid-cols-[1fr_auto] items-end gap-[60px] max-[768px]:grid-cols-1 max-[768px]:items-start max-[768px]:gap-6">
+          <p className="max-w-[700px] text-[20px] leading-[1.7] text-[rgba(245,244,236,0.96)] max-[768px]:max-w-none max-[768px]:text-[17px]">
             Founder-led and self-funded. We back absurd ideas and weird
             software, build our own experiments in-house, and buy the tiny
             businesses too small for anyone else&apos;s fund. All through our

@@ -9,7 +9,7 @@ const navLinks = [
 
 export function ContactMain() {
   return (
-    <div className="flex flex-col bg-field px-[22px] py-5 min-[900px]:px-12 min-[900px]:py-[26px]">
+    <div className="flex flex-col bg-field px-12 py-[26px] max-[768px]:px-6 max-[768px]:py-5">
       <nav className="flex flex-wrap justify-end gap-x-7 gap-y-2 font-mono text-[12.5px] tracking-[0.1em]">
         {navLinks.map((link) => (
           <a
@@ -39,13 +39,13 @@ export function ContactMain() {
           deal@onpointvc.com
         </a>
 
-        <div className="mt-10">
+        <div className="mt-10 max-[768px]:mt-8">
           <div className="font-mono text-[11px] tracking-[0.14em] text-[var(--dim)] opacity-60">
             OPERATORS
           </div>
           <a
             href="mailto:ops@onpointvc.com"
-            className="mt-2 inline-block w-fit font-mono text-[13px] text-[var(--text)] hover:text-[var(--amber)]"
+            className="mt-2 inline-block w-fit font-mono text-[13px] text-[var(--text)] hover:text-[var(--amber)] max-[768px]:mt-3"
           >
             ops@onpointvc.com
           </a>
