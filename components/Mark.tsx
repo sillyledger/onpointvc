@@ -1,7 +1,7 @@
-export function Mark({ size = 38 }: { size?: number }) {
-  const inner = size * 0.75;
-  const radius = inner * 0.3;
-  const offset = inner / 3;
+export function Mark({ size = 34 }: { size?: number }) {
+  const inner = size * (24 / 34);
+  const radius = size * (7 / 34);
+  const offset = size * (9 / 34);
   return (
     <div style={{ width: size, height: size, position: "relative", flexShrink: 0 }}>
       <span
