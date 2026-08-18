@@ -40,10 +40,10 @@ export function Panel() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="flex flex-col max-[768px]:self-start">
+    <div className="panel-wrap">
       <div
         id="portfolio"
-        className="hidden flex-1 flex-col border-r border-[var(--hair)] bg-panel px-9 py-[34px] min-[769px]:flex"
+        className="panel-sidebar border-r border-[var(--hair)] bg-panel px-9 py-[34px]"
       >
         <Link href="/">
           <Wordmark />
@@ -63,7 +63,7 @@ export function Panel() {
         </div>
       </div>
 
-      <div className="flex h-16 items-center justify-between border-b border-[var(--hair)] bg-panel px-5 min-[769px]:hidden">
+      <div className="panel-topbar border-b border-[var(--hair)] bg-panel">
         <Link href="/" aria-label="OnPoint VC home">
           <Mark size={30} />
         </Link>
@@ -87,7 +87,7 @@ export function Panel() {
       </div>
 
       {menuOpen && (
-        <div className="fixed inset-0 z-50 flex flex-col bg-panel px-[22px] py-4 min-[769px]:hidden">
+        <div className="panel-overlay fixed inset-0 z-50 flex-col bg-panel px-[22px] py-4">
           <div className="flex items-center justify-between">
             <Link href="/" aria-label="OnPoint VC home" onClick={() => setMenuOpen(false)}>
               <Mark size={30} />
