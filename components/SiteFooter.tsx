@@ -21,7 +21,7 @@ const columns = [
 
 export function SiteFooter() {
   return (
-    <footer className="flex flex-wrap justify-center gap-x-20 gap-y-10 bg-ink px-12 py-12 max-[768px]:flex-col max-[768px]:items-start max-[768px]:justify-start max-[768px]:gap-8 max-[768px]:px-6">
+    <footer className="flex flex-wrap justify-center gap-x-20 gap-y-10 bg-paper px-12 py-12 max-[768px]:flex-col max-[768px]:items-start max-[768px]:justify-start max-[768px]:gap-8 max-[768px]:px-6">
       {columns.map((column, i) => (
         <div
           key={i}
@@ -32,7 +32,7 @@ export function SiteFooter() {
               <Link
                 key={link.label}
                 href={link.href}
-                className="text-[var(--text)] no-underline hover:text-[var(--amber)]"
+                className="text-[var(--ink)] no-underline hover:text-[var(--amber)]"
               >
                 {link.label}
               </Link>
@@ -40,7 +40,7 @@ export function SiteFooter() {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-[var(--dim)] no-underline hover:text-[var(--amber)]"
+                className="text-[var(--ink-dim)] no-underline hover:text-[var(--amber)]"
               >
                 {link.label}
               </a>
