@@ -40,39 +40,22 @@ export function Main() {
         </div>
       </nav>
 
-      <div className="flex flex-1 flex-col justify-center">
-        <div className="relative w-full">
-          <h1 className="relative z-[2] max-w-[960px] font-display text-[clamp(44px,7.4vw,100px)] font-extrabold leading-[0.98] tracking-[-0.02em] lowercase max-[768px]:text-[clamp(34px,9vw,38px)]">
-            we&apos;re bold, absurd,
-            <br />
-            and driven<span style={{ color: "var(--amber)" }}>.</span>
-          </h1>
-          <div
-            className="pointer-events-none absolute left-0 z-[1] w-full overflow-visible max-[768px]:hidden"
-            style={{ top: "calc(100% - 0.22em - 150px)", height: 150 }}
+      <div className="flex flex-1 flex-col justify-end">
+        <h1 className="max-w-[960px] font-display text-[clamp(44px,7.4vw,100px)] font-extrabold leading-[0.98] tracking-[-0.02em] lowercase max-[768px]:text-[clamp(34px,9vw,38px)]">
+          we&apos;re bold, absurd,
+          <br />
+          and driven<span style={{ color: "var(--amber)" }}>.</span>
+        </h1>
+        <div className="mt-[52px] flex justify-end">
+          <a
+            href="#approach"
+            className="inline-flex items-center gap-3 rounded-full border-[1.5px] border-[var(--text)] px-[30px] py-[17px] font-sans text-[15px] font-medium text-[var(--text)] no-underline transition-colors hover:bg-[var(--text)] hover:text-[var(--field)]"
           >
-            <svg
-              width="100%"
-              height="150"
-              viewBox="0 0 1400 150"
-              preserveAspectRatio="none"
-            >
-              <path
-                d="M0 95 C 220 40, 420 140, 700 75 S 1080 15, 1400 95"
-                fill="none"
-                stroke="var(--amber)"
-                strokeOpacity="0.9"
-                strokeWidth="2"
-              />
-              <path
-                d="M0 112 C 220 60, 420 155, 700 92 S 1080 32, 1400 112"
-                fill="none"
-                stroke="var(--text)"
-                strokeOpacity="0.25"
-                strokeWidth="1.5"
-              />
+            Our Approach
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-4 w-4">
+              <path d="M5 12h14M13 5l7 7-7 7" />
             </svg>
-          </div>
+          </a>
         </div>
       </div>
     </div>
