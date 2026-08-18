@@ -12,7 +12,7 @@ const navLinks = [
 
 export function Main() {
   return (
-    <div className="flex min-h-screen flex-col px-12 py-[34px] max-[768px]:px-6 max-[768px]:py-8">
+    <div className="flex min-h-[54vh] flex-col px-12 py-[34px] max-[768px]:px-6 max-[768px]:py-8">
       <nav className="flex flex-wrap items-center justify-between gap-x-8 gap-y-4">
         <Link href="/" aria-label="OnPoint VC home">
           <Wordmark />
