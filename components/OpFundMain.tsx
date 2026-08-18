@@ -4,7 +4,6 @@ import { Wordmark } from "./Wordmark";
 
 const navLinks = [
   { href: "/thesis", label: "THESIS" },
-  { href: "/#acquisitions", label: "ACQUISITIONS" },
   { href: "/studio", label: "STUDIO" },
   { href: "/#team", label: "TEAM" },
   { href: "/contact", label: "CONTACT" },
