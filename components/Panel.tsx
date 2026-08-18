@@ -40,10 +40,10 @@ export function Panel() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <>
+    <div className="flex flex-col max-[768px]:self-start">
       <div
         id="portfolio"
-        className="hidden flex-col border-r border-[var(--hair)] bg-panel px-9 py-[34px] min-[769px]:flex"
+        className="hidden flex-1 flex-col border-r border-[var(--hair)] bg-panel px-9 py-[34px] min-[769px]:flex"
       >
         <Link href="/">
           <Wordmark />
@@ -115,6 +115,6 @@ export function Panel() {
           </nav>
         </div>
       )}
-    </>
+    </div>
   );
 }
