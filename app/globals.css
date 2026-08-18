@@ -40,7 +40,7 @@ body {
   font-family: var(--font-plex-sans), sans-serif;
 }
 
-/* Two-column page shell: sidebar/panel column + content column. */
+/* Two-column page shell: sidebar/panel column + content column (inner pages, e.g. /contact). */
 .page-grid {
   display: grid;
   grid-template-columns: 300px 1fr;
@@ -48,53 +48,8 @@ body {
   min-height: 100vh;
 }
 
-/* Panel.tsx / ContactPanel.tsx root: fills its full grid-cell height on desktop. */
-.panel-wrap {
-  display: flex;
-  flex-direction: column;
-}
-
-/* Desktop sidebar nav — visible above 768px. */
-.panel-sidebar {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-}
-
-/* Compact mobile top bar — hidden above 768px. */
-.panel-topbar {
-  display: none;
-}
-
-/* Full-screen mobile nav drawer — hidden above 768px. */
-.panel-overlay {
-  display: flex;
-}
-
-@media (min-width: 769px) {
-  .panel-overlay {
-    display: none;
-  }
-}
-
 @media (max-width: 768px) {
   .page-grid {
     grid-template-columns: 1fr;
-  }
-
-  .panel-wrap {
-    align-self: flex-start;
-  }
-
-  .panel-sidebar {
-    display: none;
-  }
-
-  .panel-topbar {
-    display: flex;
-    height: 64px;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
   }
 }

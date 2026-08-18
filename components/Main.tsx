@@ -1,6 +1,45 @@
+import Link from "next/link";
+import { Wordmark } from "./Wordmark";
+
+const navLinks = [
+  { href: "#thesis", label: "THESIS" },
+  { href: "#op-fund", label: "OP FUND" },
+  { href: "#acquisitions", label: "ACQUISITIONS" },
+  { href: "#studio", label: "STUDIO" },
+  { href: "#team", label: "TEAM" },
+  { href: "/contact", label: "CONTACT" },
+];
+
 export function Main() {
   return (
-    <div className="flex flex-col px-12 py-[34px] max-[768px]:px-6 max-[768px]:py-8">
+    <div className="flex min-h-screen flex-col px-12 py-[34px] max-[768px]:px-6 max-[768px]:py-8">
+      <nav className="flex flex-wrap items-center justify-between gap-x-8 gap-y-4">
+        <Link href="/" aria-label="OnPoint VC home">
+          <Wordmark />
+        </Link>
+        <div className="flex flex-wrap gap-x-7 gap-y-2 font-mono text-[12.5px] tracking-[0.1em]">
+          {navLinks.map((link) =>
+            link.href.startsWith("/") ? (
+              <Link
+                key={link.label}
+                href={link.href}
+                className="text-[var(--text)] no-underline hover:text-[var(--amber)]"
+              >
+                {link.label}
+              </Link>
+            ) : (
+              <a
+                key={link.label}
+                href={link.href}
+                className="text-[var(--text)] no-underline hover:text-[var(--amber)]"
+              >
+                {link.label}
+              </a>
+            ),
+          )}
+        </div>
+      </nav>
+
       <div className="flex flex-1 flex-col justify-center max-w-[960px]">
         <div className="relative">
           <h1 className="relative z-[2] font-display text-[clamp(44px,7.4vw,100px)] font-extrabold leading-[0.98] tracking-[-0.02em] lowercase max-[768px]:text-[clamp(34px,9vw,38px)]">
