@@ -63,7 +63,7 @@ export function Panel() {
         </div>
       </div>
 
-      <div className="flex items-center justify-between border-b border-[var(--hair)] bg-panel px-[22px] py-4 min-[769px]:hidden">
+      <div className="flex h-16 items-center justify-between border-b border-[var(--hair)] bg-panel px-5 min-[769px]:hidden">
         <Link href="/" aria-label="OnPoint VC home">
           <Mark size={30} />
         </Link>
