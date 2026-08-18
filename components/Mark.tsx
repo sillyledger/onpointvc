@@ -13,6 +13,7 @@ export function Mark({ size = 34 }: { size?: number }) {
           height: inner,
           borderRadius: radius,
           background: "var(--field)",
+          boxShadow: "0 0 0 1px var(--hair)",
         }}
       />
       <span
