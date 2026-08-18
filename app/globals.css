@@ -40,3 +40,24 @@ body {
   color: var(--text);
   font-family: var(--font-plex-sans), sans-serif;
 }
+
+footer a {
+  color: var(--ink) !important;
+  text-decoration: none !important;
+}
+
+footer a:visited {
+  color: var(--ink) !important;
+}
+
+footer a:hover {
+  color: var(--amber) !important;
+}
+
+footer .fcol-dim a {
+  color: var(--ink-dim) !important;
+}
+
+footer .fcol-dim a:visited {
+  color: var(--ink-dim) !important;
+}
