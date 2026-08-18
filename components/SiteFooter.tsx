@@ -2,7 +2,6 @@ import Link from "next/link";
 
 const columns = [
   [
-    { href: "#", label: "ABOUT" },
     { href: "#", label: "THESIS" },
     { href: "/contact", label: "CONTACT" },
   ],
