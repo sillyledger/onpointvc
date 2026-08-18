@@ -35,8 +35,8 @@ export function OpFundMain() {
       </nav>
 
       <div className="grid flex-1 grid-cols-[0.75fr_1.25fr] items-end gap-[70px] py-[90px] max-[900px]:grid-cols-1 max-[900px]:gap-10">
-        <h1 className="font-display text-[clamp(44px,5.2vw,76px)] font-extrabold leading-[1.02] tracking-[-0.02em] lowercase">
-          op
+        <h1 className="font-display text-[clamp(44px,5.2vw,76px)] font-extrabold leading-[1.02] tracking-[-0.02em]">
+          OP
           <br />
           fund<span style={{ color: "var(--amber)" }}>.</span>
         </h1>
