@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { ContactPanel } from "@/components/ContactPanel";
 import { ContactMain } from "@/components/ContactMain";
 
 export const metadata: Metadata = {
@@ -7,10 +6,5 @@ export const metadata: Metadata = {
 };
 
 export default function Contact() {
-  return (
-    <div className="page-grid">
-      <ContactPanel />
-      <ContactMain />
-    </div>
-  );
+  return <ContactMain />;
 }
