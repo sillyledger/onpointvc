@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react";
 import Link from "next/link";
 import { Wordmark } from "./Wordmark";
 
@@ -12,7 +13,10 @@ const navLinks = [
 
 export function Main() {
   return (
-    <div className="flex min-h-[82vh] flex-col px-12 py-[34px] max-[768px]:px-6 max-[768px]:py-8">
+    <div
+      className="flex min-h-[82vh] flex-col bg-[var(--paper)] px-12 py-[34px] max-[768px]:px-6 max-[768px]:py-8"
+      style={{ "--text": "var(--ink)", "--dim": "var(--ink-dim)" } as CSSProperties}
+    >
       <nav className="flex flex-wrap items-center justify-between gap-x-8 gap-y-4">
         <Link href="/" aria-label="OnPoint VC home">
           <Wordmark />
@@ -41,7 +45,7 @@ export function Main() {
       </nav>
 
       <div className="flex flex-1 flex-col justify-end">
-        <h1 className="max-w-[960px] font-display text-[clamp(44px,7.4vw,100px)] font-extrabold leading-[0.98] tracking-[-0.02em] lowercase max-[768px]:text-[clamp(34px,9vw,38px)]">
+        <h1 className="max-w-[960px] font-display text-[clamp(44px,7.4vw,100px)] font-extrabold leading-[0.98] tracking-[-0.02em] text-[var(--text)] lowercase max-[768px]:text-[clamp(34px,9vw,38px)]">
           we&apos;re bold, absurd,
           <br />
           and driven<span style={{ color: "var(--amber)" }}>.</span>
@@ -49,7 +53,7 @@ export function Main() {
         <div className="mt-[52px] flex justify-end">
           <a
             href="#approach"
-            className="inline-flex items-center gap-3 rounded-full border-[1.5px] border-[var(--text)] px-[30px] py-[17px] font-sans text-[15px] font-medium text-[var(--text)] no-underline transition-colors hover:bg-[var(--text)] hover:text-[var(--field)]"
+            className="inline-flex items-center gap-3 rounded-full border-[1.5px] border-[var(--text)] px-[30px] py-[17px] font-sans text-[15px] font-medium text-[var(--text)] no-underline transition-colors hover:bg-[var(--text)] hover:text-[var(--paper)]"
           >
             Our Approach
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-4 w-4">
