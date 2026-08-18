@@ -45,7 +45,7 @@ export function Main() {
           <h1 className="relative z-[2] max-w-[960px] font-display text-[clamp(44px,7.4vw,100px)] font-extrabold leading-[0.98] tracking-[-0.02em] lowercase max-[768px]:text-[clamp(34px,9vw,38px)]">
             we&apos;re bold, absurd,
             <br />
-            and driven.
+            and driven<span style={{ color: "var(--amber)" }}>.</span>
           </h1>
           <div
             className="pointer-events-none absolute left-0 z-[1] w-full overflow-visible max-[768px]:hidden"
@@ -73,14 +73,6 @@ export function Main() {
               />
             </svg>
           </div>
-        </div>
-        <div className="mt-7 max-w-[700px]">
-          <p className="text-[20px] leading-[1.7] text-[rgba(245,244,236,0.96)] max-[768px]:text-[17px]">
-            Founder-led and self-funded. We back absurd ideas and weird
-            software, build our own experiments in-house, and buy the tiny
-            businesses too small for anyone else&apos;s fund. All through our
-            own capital, not someone else&apos;s LP checks.
-          </p>
         </div>
       </div>
     </div>
