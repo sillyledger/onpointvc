@@ -44,14 +44,13 @@ export function Main() {
       </nav>
 
       <div className="flex flex-1 flex-col justify-end">
-        <h1 className="max-w-[980px] font-display text-[clamp(44px,7.2vw,96px)] font-extrabold leading-[0.98] tracking-[-0.02em] text-[var(--text)] lowercase max-[768px]:text-[clamp(34px,9vw,38px)]">
+        <h1 className="max-w-[1400px] font-display text-[clamp(38px,5.8vw,88px)] font-extrabold leading-[0.98] tracking-[-0.02em] text-[var(--text)] lowercase max-[768px]:text-[clamp(34px,9vw,38px)]">
           we&apos;re bold, absurd,
           <br />
           and driven<span style={{ color: "var(--panel)" }}>.</span>
-        </h1>
-        <p className="mt-3 font-display text-[clamp(22px,3.2vw,44px)] font-medium leading-[1.1] tracking-[-0.01em] text-[var(--ink-dim)] lowercase max-[768px]:text-[clamp(17px,4.5vw,20px)]">
+          <br />
           conviction, not consensus.
-        </p>
+        </h1>
         <div className="mt-[52px] flex justify-end">
           <a
             href="#approach"
