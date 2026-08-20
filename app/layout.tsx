@@ -6,7 +6,7 @@ import "./globals.css";
 
 const redditSans = Reddit_Sans({
   variable: "--font-reddit-sans",
-  weight: ["400", "500", "600"],
+  weight: ["400", "500", "600", "800"],
   subsets: ["latin"],
 });
 
