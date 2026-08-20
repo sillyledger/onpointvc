@@ -49,7 +49,7 @@ export function Main() {
           <br />
           and driven<span style={{ color: "var(--panel)" }}>.</span>
           <br />
-          conviction, not consensus.
+          <span style={{ color: "var(--ink-dim)" }}>conviction, not consensus.</span>
         </h1>
         <div className="mt-[52px] flex justify-end">
           <a
