@@ -61,19 +61,19 @@ export function ThesisMain() {
 
         <div>
           <div className="mb-10 flex flex-col gap-8">
-            <p className="max-w-[620px] font-display text-[clamp(18px,1.6vw,22px)] font-normal leading-[1.55] tracking-[-0.01em] text-[var(--ink-dim)]">
+            <p className="max-w-[620px] font-display text-[clamp(18px,1.6vw,22px)] font-normal leading-[1.55] tracking-[-0.01em] text-[var(--ink)]">
               We invest like operators, because we are operators. Every check
               comes from our own capital. No LPs, no board to please, no fund
               cycle telling us when to be patient and when to panic.
             </p>
-            <p className="max-w-[620px] font-display text-[clamp(18px,1.6vw,22px)] font-normal leading-[1.55] tracking-[-0.01em] text-[var(--ink-dim)]">
+            <p className="max-w-[620px] font-display text-[clamp(18px,1.6vw,22px)] font-normal leading-[1.55] tracking-[-0.01em] text-[var(--ink)]">
               We back early-stage, pre-revenue founders. No traction
               required, no track record needed. Solo founders get the same
               conviction as a team of four. And if your idea sounds a little
               unhinged, that&apos;s not a warning sign to us. It&apos;s the
               pitch.
             </p>
-            <p className="max-w-[620px] font-display text-[clamp(18px,1.6vw,22px)] font-normal leading-[1.55] tracking-[-0.01em] text-[var(--ink-dim)]">
+            <p className="max-w-[620px] font-display text-[clamp(18px,1.6vw,22px)] font-normal leading-[1.55] tracking-[-0.01em] text-[var(--ink)]">
               Most VCs pattern-match against what already worked. We look
               for what hasn&apos;t been tried yet, because someone was too
               scared to send the deck. The serious bets and the absurd ones
@@ -88,7 +88,7 @@ export function ThesisMain() {
                 <div className="mb-[10px] font-mono text-[11px] tracking-[0.16em] text-[var(--ink-dim)]">
                   {line.label}
                 </div>
-                <p className="max-w-[320px] font-sans text-[14.5px] leading-[1.6] text-[var(--ink-dim)]">
+                <p className="max-w-[320px] font-sans text-[14.5px] leading-[1.6] text-[var(--ink)]">
                   {line.desc}
                 </p>
               </div>

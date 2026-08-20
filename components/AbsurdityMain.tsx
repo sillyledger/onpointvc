@@ -41,15 +41,15 @@ export function AbsurdityMain() {
         </h1>
 
         <div className="flex flex-col gap-8">
-          <p className="max-w-[620px] font-display text-[clamp(18px,1.6vw,22px)] font-normal leading-[1.55] tracking-[-0.01em] text-[var(--ink-dim)]">
+          <p className="max-w-[620px] font-display text-[clamp(18px,1.6vw,22px)] font-normal leading-[1.55] tracking-[-0.01em] text-[var(--ink)]">
             Every fund says they back bold ideas. Most of them mean bold
             within reason.
           </p>
-          <p className="max-w-[620px] font-display text-[clamp(18px,1.6vw,22px)] font-normal leading-[1.55] tracking-[-0.01em] text-[var(--ink-dim)]">
+          <p className="max-w-[620px] font-display text-[clamp(18px,1.6vw,22px)] font-normal leading-[1.55] tracking-[-0.01em] text-[var(--ink)]">
             This is the one line of business that doesn&apos;t have a
             reason.
           </p>
-          <p className="max-w-[620px] font-display text-[clamp(18px,1.6vw,22px)] font-normal leading-[1.55] tracking-[-0.01em] text-[var(--ink-dim)]">
+          <p className="max-w-[620px] font-display text-[clamp(18px,1.6vw,22px)] font-normal leading-[1.55] tracking-[-0.01em] text-[var(--ink)]">
             Absurdity Projects is where the ideas that shouldn&apos;t work
             get built anyway. Not because we think they&apos;re secretly
             brilliant in disguise. Sometimes they&apos;re just funny, or
@@ -58,19 +58,19 @@ export function AbsurdityMain() {
             back everything else: real capital, real conviction, no
             committee to talk us out of it.
           </p>
-          <p className="max-w-[620px] font-display text-[clamp(18px,1.6vw,22px)] font-normal leading-[1.55] tracking-[-0.01em] text-[var(--ink-dim)]">
+          <p className="max-w-[620px] font-display text-[clamp(18px,1.6vw,22px)] font-normal leading-[1.55] tracking-[-0.01em] text-[var(--ink)]">
             Stupid Hit is the proof. Nobody pitched us a five-year roadmap
             for it. It exists because it was a good idea to make, and we
             made it.
           </p>
-          <p className="max-w-[620px] font-display text-[clamp(18px,1.6vw,22px)] font-normal leading-[1.55] tracking-[-0.01em] text-[var(--ink-dim)]">
+          <p className="max-w-[620px] font-display text-[clamp(18px,1.6vw,22px)] font-normal leading-[1.55] tracking-[-0.01em] text-[var(--ink)]">
             We don&apos;t run this bucket to be contrarian for its own
             sake. We run it because the absurd ones are usually where the
             actual creativity lives, before it gets sanded down into
             something a pitch deck can survive. Most of what&apos;s
             interesting starts out looking a little stupid.
           </p>
-          <p className="max-w-[620px] font-display text-[clamp(18px,1.6vw,22px)] font-normal leading-[1.55] tracking-[-0.01em] text-[var(--ink-dim)]">
+          <p className="max-w-[620px] font-display text-[clamp(18px,1.6vw,22px)] font-normal leading-[1.55] tracking-[-0.01em] text-[var(--ink)]">
             Three, right now. More coming, whenever the next one shows up.
           </p>
         </div>
