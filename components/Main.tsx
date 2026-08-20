@@ -48,9 +48,10 @@ export function Main() {
           we&apos;re bold, absurd,
           <br />
           and driven<span style={{ color: "var(--panel)" }}>.</span>
-          <br />
-          <span style={{ color: "var(--ink-dim)" }}>conviction, not consensus.</span>
         </h1>
+        <p className="mt-3 font-display text-[clamp(22px,3.2vw,44px)] font-medium leading-[1.1] tracking-[-0.01em] text-[var(--ink-dim)] lowercase max-[768px]:text-[clamp(17px,4.5vw,20px)]">
+          conviction, not consensus.
+        </p>
         <div className="mt-[52px] flex justify-end">
           <a
             href="#approach"
