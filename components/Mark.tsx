@@ -23,7 +23,7 @@ export function Mark({ size = 34 }: { size?: number }) {
           width: inner,
           height: inner,
           borderRadius: radius,
-          background: "var(--amber)",
+          background: "var(--panel)",
         }}
       />
     </div>
