@@ -49,7 +49,7 @@ export function Main() {
           <br />
           and driven<span style={{ color: "var(--panel)" }}>.</span>
           <br />
-          <span style={{ color: "var(--ink-dim)" }}>self-funded, no filler.</span>
+          <span style={{ color: "var(--ink-dim)" }}>conviction, not consensus.</span>
         </h1>
         <div className="mt-[52px] flex justify-end">
           <a
