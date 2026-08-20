@@ -44,10 +44,8 @@ export function Main() {
       </nav>
 
       <div className="flex flex-1 flex-col justify-end">
-        <h1 className="max-w-[1180px] font-display text-[clamp(40px,6.6vw,92px)] font-extrabold leading-[0.98] tracking-[-0.02em] text-[var(--text)] lowercase max-[768px]:text-[clamp(34px,9vw,38px)]">
-          bold bets.
-          <br />
-          absurd ones too.
+        <h1 className="max-w-[1100px] font-display text-[clamp(40px,6.8vw,92px)] font-extrabold leading-[0.98] tracking-[-0.02em] text-[var(--text)] lowercase max-[768px]:text-[clamp(34px,9vw,38px)]">
+          bold bets. absurd ones too.
           <br />
           we back both the same way<span style={{ color: "var(--panel)" }}>.</span>
         </h1>
