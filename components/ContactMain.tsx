@@ -49,7 +49,7 @@ export function ContactMain() {
         </h1>
 
         <div>
-          <p className="mb-14 max-w-[520px] font-display text-[clamp(18px,1.6vw,22px)] font-normal leading-[1.55] tracking-[-0.01em] text-[var(--ink-dim)]">
+          <p className="mb-14 max-w-[520px] font-display text-[clamp(18px,1.6vw,22px)] font-normal leading-[1.55] tracking-[-0.01em] text-[var(--ink)]">
             One email, no gatekeeping. What the company does, revenue if
             it&apos;s real, why now.
           </p>
