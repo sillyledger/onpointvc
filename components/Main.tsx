@@ -47,7 +47,7 @@ export function Main() {
         <h1 className="max-w-[960px] font-display text-[clamp(44px,7.4vw,100px)] font-extrabold leading-[0.98] tracking-[-0.02em] text-[var(--text)] lowercase max-[768px]:text-[clamp(34px,9vw,38px)]">
           we&apos;re bold, absurd,
           <br />
-          and driven<span style={{ color: "var(--amber)" }}>.</span>
+          and driven<span style={{ color: "var(--panel)" }}>.</span>
         </h1>
         <div className="mt-[52px] flex justify-end">
           <a

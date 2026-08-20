@@ -37,7 +37,7 @@ export function OpFundMain() {
         <h1 className="font-display text-[clamp(44px,5.2vw,76px)] font-extrabold leading-[1.02] tracking-[-0.02em]">
           OP
           <br />
-          fund<span style={{ color: "var(--amber)" }}>.</span>
+          fund<span style={{ color: "var(--panel)" }}>.</span>
         </h1>
 
         <div className="flex flex-col gap-8">

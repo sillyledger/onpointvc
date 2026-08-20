@@ -56,7 +56,7 @@ export function ThesisMain() {
         <h1 className="font-display text-[clamp(44px,5.2vw,76px)] font-extrabold leading-[1.02] tracking-[-0.02em] lowercase">
           our
           <br />
-          thesis<span style={{ color: "var(--amber)" }}>.</span>
+          thesis<span style={{ color: "var(--panel)" }}>.</span>
         </h1>
 
         <div>

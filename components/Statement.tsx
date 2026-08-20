@@ -9,10 +9,13 @@ export function Statement() {
           <div>
             <p className="max-w-[600px] font-display text-[clamp(20px,2.1vw,28px)] font-normal leading-[1.5] tracking-[-0.01em] text-[var(--ink)]">
               We&apos;re founder-led and self-funded. Every check comes from our
-              own capital, not someone else&apos;s LP fund.{" "}
-              <span className="underline decoration-[var(--ink)] underline-offset-[5px]">
-                The serious bets and the absurd ones
-              </span>{" "}
+              own capital, not someone else&apos;s LP fund. The serious bets and the{" "}
+              <a
+                href="/absurdity-projects"
+                className="underline decoration-[var(--ink)] underline-offset-[5px] text-[var(--ink)]"
+              >
+                absurd ones
+              </a>{" "}
               get backed with the same conviction. That&apos;s the whole model.
             </p>
             <a

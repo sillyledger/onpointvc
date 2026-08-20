@@ -45,7 +45,7 @@ export function ContactMain() {
           <br />
           what you
           <br />
-          built<span style={{ color: "var(--amber)" }}>.</span>
+          built<span style={{ color: "var(--panel)" }}>.</span>
         </h1>
 
         <div>

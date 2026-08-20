@@ -37,7 +37,7 @@ export function AbsurdityMain() {
         <h1 className="font-display text-[clamp(40px,4.6vw,68px)] font-extrabold leading-[1.05] tracking-[-0.02em] lowercase">
           absurdity
           <br />
-          projects<span style={{ color: "var(--amber)" }}>.</span>
+          projects<span style={{ color: "var(--panel)" }}>.</span>
         </h1>
 
         <div className="flex flex-col gap-8">
