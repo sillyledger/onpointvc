@@ -52,15 +52,15 @@ export function Main() {
           <span style={{ color: "var(--ink-dim)" }}>conviction, not consensus.</span>
         </h1>
         <div className="mt-[52px] flex justify-end">
-          <a
-            href="#approach"
+          <Link
+            href="/contact"
             className="inline-flex items-center gap-3 rounded-full border-[1.5px] border-[var(--text)] px-[30px] py-[17px] font-sans text-[15px] font-medium text-[var(--text)] no-underline transition-colors hover:bg-[var(--text)] hover:text-[var(--paper)]"
           >
-            Our Approach
+            Contact Us
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-4 w-4">
               <path d="M5 12h14M13 5l7 7-7 7" />
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
