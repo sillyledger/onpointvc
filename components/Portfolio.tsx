@@ -2,8 +2,14 @@ const companies = [
   { name: "One Peak Two", tag: "STUDIO" },
   { name: "TWO", tag: "OP FUND" },
   { name: "Stupid Hit", tag: "ABSURDITY PROJECTS" },
-  { name: "Sorano", tag: "ACQUISITIONS" },
+  { name: "Study Brew", tag: "ACQUISITIONS" },
 ];
+
+function dotColor(tag: string) {
+  if (tag === "OP FUND") return "var(--field)";
+  if (tag === "ABSURDITY PROJECTS") return "var(--amber)";
+  return null;
+}
 
 export function Portfolio() {
   return (
@@ -19,26 +25,37 @@ export function Portfolio() {
           </p>
         </div>
         <div className="grid grid-cols-2 gap-5 max-[768px]:grid-cols-1">
-          {companies.map((c) => (
-            <a
-              key={c.name}
-              href="#"
-              className="relative flex aspect-[16/11] flex-col justify-between rounded-[22px] bg-[#0c0d14] p-[34px] no-underline"
-            >
-              <span className="inline-flex w-fit items-center gap-2 rounded-full bg-[rgba(245,244,236,0.1)] px-[14px] py-[8px] font-mono text-[11.5px] tracking-[0.12em] text-[#f5f4ec]">
-                {c.tag}
-              </span>
-              <span className="absolute right-[34px] top-[34px] flex h-[38px] w-[38px] items-center justify-center rounded-full bg-[rgba(245,244,236,0.1)] text-[#f5f4ec]">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-4 w-4">
-                  <path d="M7 17L17 7M9 7h8v8" />
-                </svg>
-              </span>
-              {/* Center intentionally left blank — real logo/mark goes here later */}
-              <h3 className="font-mono text-[clamp(22px,2.1vw,30px)] font-medium uppercase leading-[1.15] tracking-[0.02em] text-[#f5f4ec]">
-                {c.name}
-              </h3>
-            </a>
-          ))}
+          {companies.map((c) => {
+            const dot = dotColor(c.tag);
+            return (
+              <a
+                key={c.name}
+                href="#"
+                className="relative flex aspect-[2/1] flex-col justify-between rounded-[4px] border border-[var(--ink)] p-[26px] no-underline"
+              >
+                <div className="flex items-center justify-between">
+                  <span className="font-mono text-[11.5px] uppercase tracking-[0.12em] text-[var(--ink-dim)]">
+                    {c.tag}
+                  </span>
+                  {dot && (
+                    <span
+                      className="h-2 w-2 rounded-full"
+                      style={{ backgroundColor: dot }}
+                    />
+                  )}
+                </div>
+                <span className="absolute right-[30px] top-[30px] text-[var(--ink)]">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-[18px] w-[18px]">
+                    <path d="M7 17L17 7M9 7h8v8" />
+                  </svg>
+                </span>
+                {/* Center intentionally left blank — real logo/mark goes here later */}
+                <h3 className="font-mono text-[clamp(20px,2vw,28px)] font-medium uppercase leading-[1.15] tracking-[0.02em] text-[var(--ink)]">
+                  {c.name}
+                </h3>
+              </a>
+            );
+          })}
         </div>
       </div>
     </section>
