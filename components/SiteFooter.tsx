@@ -11,8 +11,8 @@ const columns = [
     { href: "/absurdity-projects", label: "ABSURDITY PROJECTS" },
   ],
   [
-    { href: "#", label: "PRIVACY" },
-    { href: "#", label: "TERMS" },
+    { href: "/privacy", label: "PRIVACY" },
+    { href: "/terms", label: "TERMS" },
   ],
 ];
 
@@ -22,7 +22,7 @@ export function SiteFooter() {
       {columns.map((column, i) => (
         <div key={i} className="flex flex-col gap-3 font-mono text-[12.5px] tracking-[0.1em]">
           {column.map((link) =>
-            link.href === "/contact" ? (
+            link.href.startsWith("/") ? (
               <Link
                 key={link.label}
                 href={link.href}
