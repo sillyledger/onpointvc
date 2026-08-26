@@ -1,13 +1,5 @@
 import type { CSSProperties } from "react";
-import Link from "next/link";
-import { Wordmark } from "./Wordmark";
-
-const navLinks = [
-  { href: "/thesis", label: "THESIS" },
-  { href: "/studio", label: "STUDIO" },
-  { href: "/absurdity-projects", label: "ABSURDITY PROJECTS" },
-  { href: "/contact", label: "CONTACT" },
-];
+import { SiteNav } from "./SiteNav";
 
 export function OpFundMain() {
   return (
@@ -15,23 +7,7 @@ export function OpFundMain() {
       className="flex min-h-screen flex-col bg-[var(--paper)] px-12 py-[34px] text-[var(--ink)] max-[768px]:px-6 max-[768px]:py-8"
       style={{ "--text": "var(--ink)", "--dim": "var(--ink-dim)" } as CSSProperties}
     >
-      <nav className="flex flex-wrap items-center justify-between gap-x-8 gap-y-4">
-        <Link href="/" aria-label="OnPoint VC home">
-          <Wordmark />
-        </Link>
-        <div className="flex flex-wrap items-center gap-x-7 gap-y-2 font-mono text-[12.5px] tracking-[0.1em]">
-          <span className="text-[var(--amber)]">OP FUND</span>
-          {navLinks.map((link) => (
-            <Link
-              key={link.label}
-              href={link.href}
-              className="text-[var(--ink)] no-underline hover:text-[var(--amber)]"
-            >
-              {link.label}
-            </Link>
-          ))}
-        </div>
-      </nav>
+      <SiteNav active="/op-fund" />
 
       <div className="grid flex-1 grid-cols-[0.75fr_1.25fr] items-end gap-[70px] py-[90px] max-[900px]:grid-cols-1 max-[900px]:gap-10">
         <h1 className="font-display text-[clamp(44px,5.2vw,76px)] font-extrabold leading-[1.02] tracking-[-0.02em]">

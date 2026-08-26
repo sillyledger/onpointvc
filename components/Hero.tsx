@@ -1,6 +1,5 @@
 import type { CSSProperties } from "react";
-import Link from "next/link";
-import { Mark } from "./Mark";
+import { SiteNav } from "./SiteNav";
 
 export function Hero() {
   return (
@@ -8,19 +7,7 @@ export function Hero() {
       className="bg-[var(--offwhite)]"
       style={{ "--text": "var(--ink)", "--dim": "var(--ink-dim)" } as CSSProperties}
     >
-      <div className="grid grid-cols-[1fr_auto_1fr] items-center px-16 pt-10 max-[768px]:px-6">
-        <Link href="/" aria-label="OnPoint VC home">
-          <Mark size={68} />
-        </Link>
-
-        <div className="col-start-2 flex justify-self-center gap-9 font-mono text-[13.5px] uppercase tracking-[0.08em] text-[var(--ink)] max-[900px]:hidden">
-          <a href="/thesis">Thesis</a>
-          <a href="/op-fund">Op Fund</a>
-          <a href="/studio">Studio</a>
-          <a href="/absurdity-projects">Absurdity Projects</a>
-          <a href="/contact">Contact</a>
-        </div>
-      </div>
+      <SiteNav />
 
       <div className="flex flex-col items-center justify-center gap-[30px] px-16 py-[60px] max-[768px]:px-6">
         <div className="relative flex items-center justify-center">
