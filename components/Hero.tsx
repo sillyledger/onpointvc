@@ -17,16 +17,6 @@ export function Hero() {
         <p className="text-center text-[clamp(18px,2.4vw,26px)] font-normal text-[var(--ink)]">
           Capital for founder-led absurdity.
         </p>
-
-        <a
-          href="/op-fund"
-          className="inline-flex items-center gap-2.5 rounded-full border-[1.5px] border-[var(--ink)] px-[30px] py-[17px] font-sans text-base text-[var(--ink)] transition-colors hover:bg-[var(--ink)] hover:text-[var(--offwhite)]"
-        >
-          OP Fund
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <path d="M5 12h14M13 5l7 7-7 7" />
-          </svg>
-        </a>
       </div>
     </section>
   );
