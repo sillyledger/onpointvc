@@ -38,7 +38,7 @@ html {
 }
 
 body {
-  background: var(--field);
+  background: var(--offwhite);
   color: var(--text);
   font-family: var(--font-plex-sans), sans-serif;
 }
