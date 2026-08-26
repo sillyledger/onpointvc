@@ -1,14 +1,17 @@
+import type { CSSProperties } from "react";
+import Link from "next/link";
+import { Mark } from "./Mark";
+
 export function Hero() {
   return (
-    <section className="bg-[var(--offwhite)]">
+    <section
+      className="bg-[var(--offwhite)]"
+      style={{ "--text": "var(--ink)", "--dim": "var(--ink-dim)" } as CSSProperties}
+    >
       <div className="grid grid-cols-[1fr_auto_1fr] items-center px-16 pt-10 max-[768px]:px-6">
-        <svg className="h-[68px] w-[68px]" viewBox="0 0 56 56" fill="none">
-          <rect x="16" y="16" width="14" height="14" rx="2" fill="#1b1a14" transform="rotate(45 23 23)" />
-          <rect x="4" y="8" width="12" height="12" rx="2" fill="#c1272d" opacity="0.85" transform="rotate(45 10 14)" />
-          <rect x="28" y="8" width="12" height="12" rx="2" fill="#c1272d" opacity="0.85" transform="rotate(45 34 14)" />
-          <rect x="14" y="30" width="12" height="12" rx="2" fill="#c1272d" opacity="0.5" transform="rotate(45 20 36)" />
-          <rect x="30" y="30" width="12" height="12" rx="2" fill="#1b1a14" opacity="0.5" transform="rotate(45 36 36)" />
-        </svg>
+        <Link href="/" aria-label="OnPoint VC home">
+          <Mark size={68} />
+        </Link>
 
         <div className="col-start-2 flex justify-self-center gap-9 font-mono text-[13.5px] uppercase tracking-[0.08em] text-[var(--ink)] max-[900px]:hidden">
           <a href="/thesis">Thesis</a>
