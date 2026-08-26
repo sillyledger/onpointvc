@@ -1,47 +1,9 @@
-import type { CSSProperties } from "react";
 import { SiteNav } from "./SiteNav";
 
 export function OpFundMain() {
   return (
-    <div
-      className="flex min-h-screen flex-col bg-[var(--paper)] px-12 py-[34px] text-[var(--ink)] max-[768px]:px-6 max-[768px]:py-8"
-      style={{ "--text": "var(--ink)", "--dim": "var(--ink-dim)" } as CSSProperties}
-    >
+    <div className="min-h-screen bg-[var(--offwhite)]">
       <SiteNav active="/op-fund" />
-
-      <div className="grid flex-1 grid-cols-[0.75fr_1.25fr] items-end gap-[70px] py-[90px] max-[900px]:grid-cols-1 max-[900px]:gap-10">
-        <h1 className="font-display text-[clamp(44px,5.2vw,76px)] font-extrabold leading-[1.02] tracking-[-0.02em]">
-          OP
-          <br />
-          fund<span style={{ color: "var(--panel)" }}>.</span>
-        </h1>
-
-        <div className="flex flex-col gap-8">
-          <p className="max-w-[620px] font-display text-[clamp(18px,1.6vw,22px)] font-normal leading-[1.55] tracking-[-0.01em] text-[var(--ink)]">
-            $3.4M. All of it ours.
-          </p>
-          <p className="max-w-[620px] font-display text-[clamp(18px,1.6vw,22px)] font-normal leading-[1.55] tracking-[-0.01em] text-[var(--ink)]">
-            No LPs. No outside capital. No one to answer to when a bet
-            doesn&apos;t pay off, and no one to split the upside with when
-            it does.
-          </p>
-          <p className="max-w-[620px] font-display text-[clamp(18px,1.6vw,22px)] font-normal leading-[1.55] tracking-[-0.01em] text-[var(--ink)]">
-            The fund isn&apos;t sitting still waiting for the next check to
-            write. We actively trade it, across equities, crypto, and
-            futures, and the gains get put right back to work. Every
-            position that pays off becomes more capital for the next
-            founder we back.
-          </p>
-          <p className="max-w-[620px] font-display text-[clamp(18px,1.6vw,22px)] font-normal leading-[1.55] tracking-[-0.01em] text-[var(--ink)]">
-            That&apos;s the model. The fund grows itself. The bigger it
-            gets, the more ventures it can fund, and the less patient we
-            have to be waiting on someone else&apos;s fundraise cycle.
-          </p>
-          <p className="max-w-[620px] font-display text-[clamp(18px,1.6vw,22px)] font-normal leading-[1.55] tracking-[-0.01em] text-[var(--ink)]">
-            Most funds raise once and spend down. Ours compounds.
-          </p>
-        </div>
-      </div>
     </div>
   );
 }
