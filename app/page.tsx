@@ -1,15 +1,5 @@
-import { Main } from "@/components/Main";
-import { Statement } from "@/components/Statement";
-import { InvestmentFocus } from "@/components/InvestmentFocus";
-import { Portfolio } from "@/components/Portfolio";
+import { Hero } from "@/components/Hero";
 
 export default function Home() {
-  return (
-    <>
-      <Main />
-      <Statement />
-      <InvestmentFocus />
-      <Portfolio />
-    </>
-  );
+  return <Hero />;
 }

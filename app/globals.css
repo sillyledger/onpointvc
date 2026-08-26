@@ -11,6 +11,8 @@
   --paper: #f3f1ea;
   --ink: #1b1a14;
   --ink-dim: rgba(27, 26, 20, 0.62);
+  --red: #c1272d;
+  --offwhite: #f7f7f5;
 }
 
 @theme inline {
