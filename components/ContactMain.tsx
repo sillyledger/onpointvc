@@ -11,7 +11,7 @@ export function ContactMain() {
             <h1 className="mb-7 text-[clamp(44px,6.5vw,84px)] font-black leading-[1.05] tracking-[-0.02em] text-[var(--ink)] [font-family:var(--font-inter)]">
               Let&apos;s talk.
             </h1>
-            <p className="max-w-[34ch] font-sans text-[clamp(16px,1.4vw,18px)] leading-[1.6] text-[var(--ink-dim)]">
+            <p className="max-w-[34ch] font-sans text-[clamp(16px,1.4vw,18px)] leading-[1.6] text-[var(--ink)]">
               Based in Taichung, backing founders everywhere.
             </p>
           </div>
@@ -23,7 +23,7 @@ export function ContactMain() {
               </span>
               <a
                 href="mailto:deal@onpointvc.com"
-                className="inline-block border-b-[1.5px] border-[var(--ink)] pb-2.5 text-[clamp(20px,2.3vw,28px)] text-[var(--ink)] no-underline transition-colors hover:border-[var(--red)] hover:text-[var(--red)]"
+                className="inline-block border-b-[1.5px] border-[var(--ink)] pb-2.5 text-[clamp(17px,1.7vw,20px)] text-[var(--ink)] no-underline transition-colors hover:border-[var(--red)] hover:text-[var(--red)]"
               >
                 deal@onpointvc.com
               </a>
@@ -35,7 +35,7 @@ export function ContactMain() {
               </span>
               <a
                 href="mailto:ops@onpointvc.com"
-                className="inline-block border-b-[1.5px] border-[var(--ink)] pb-2.5 text-[clamp(20px,2.3vw,28px)] text-[var(--ink)] no-underline transition-colors hover:border-[var(--red)] hover:text-[var(--red)]"
+                className="inline-block border-b-[1.5px] border-[var(--ink)] pb-2.5 text-[clamp(17px,1.7vw,20px)] text-[var(--ink)] no-underline transition-colors hover:border-[var(--red)] hover:text-[var(--red)]"
               >
                 ops@onpointvc.com
               </a>
@@ -47,7 +47,7 @@ export function ContactMain() {
               </span>
               <a
                 href="mailto:jm@onpointvc.com"
-                className="inline-block border-b-[1.5px] border-[var(--ink)] pb-2.5 text-[clamp(20px,2.3vw,28px)] text-[var(--ink)] no-underline transition-colors hover:border-[var(--red)] hover:text-[var(--red)]"
+                className="inline-block border-b-[1.5px] border-[var(--ink)] pb-2.5 text-[clamp(17px,1.7vw,20px)] text-[var(--ink)] no-underline transition-colors hover:border-[var(--red)] hover:text-[var(--red)]"
               >
                 jm@onpointvc.com
               </a>
