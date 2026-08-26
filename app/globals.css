@@ -63,3 +63,27 @@ footer .fcol-dim a {
 footer .fcol-dim a:visited {
   color: var(--ink-dim) !important;
 }
+
+@keyframes onpoint-o-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 0 rgba(193, 39, 45, 0));
+  }
+  50% {
+    transform: scale(1.07);
+    filter: drop-shadow(0 0 18px rgba(193, 39, 45, 0.45));
+  }
+}
+
+.o-pulse {
+  display: inline-block;
+  transform-origin: 50% 55%;
+  animation: onpoint-o-pulse 3.2s ease-in-out infinite;
+}
+
+.o-pulse:hover {
+  animation-play-state: paused;
+  transform: scale(1.18) rotate(-6deg);
+  transition: transform 0.35s ease;
+}
