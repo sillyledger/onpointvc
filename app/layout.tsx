@@ -42,7 +42,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${redditSans.variable} ${plexSans.variable} ${plexMono.variable} ${inter.variable}`}
     >
-      <body className="bg-field text-text font-sans antialiased">
+      <body className="bg-[var(--offwhite)] text-text font-sans antialiased">
         {children}
         <SiteFooter />
       </body>
