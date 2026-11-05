@@ -1,0 +1,180 @@
+/* Homepage only (Nov 2 hero). Approved exception to the "no centered text" rule — do not reuse elsewhere. */
+
+.page {
+  --home-cream: #f6f2e7;
+  --home-ink: #1b1a14;
+  --home-sage: #aec0ac;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  padding-left: env(safe-area-inset-left, 0px);
+  padding-right: env(safe-area-inset-right, 0px);
+  background: var(--home-cream);
+  color: var(--home-ink);
+  font-family: var(--font-home-inter), sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Homepage only: hide the shared site footer and match the body to the cream page. */
+:global(body):has(.page) {
+  background: #f6f2e7;
+}
+
+:global(body):has(.page) > :global(footer) {
+  display: none;
+}
+
+.page a:focus-visible {
+  outline: 2px solid var(--home-ink);
+  outline-offset: 4px;
+}
+
+/* Top bar */
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 32px 48px;
+}
+
+.wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-home-inter), sans-serif;
+  font-weight: 800;
+  font-size: 17px;
+  letter-spacing: 0.32em;
+  line-height: 1;
+  color: var(--home-ink);
+  text-decoration: none;
+}
+
+.wordmark svg {
+  display: block;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tabs a {
+  font-family: var(--font-home-inter), sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.2;
+  color: var(--home-ink);
+  text-decoration: none;
+}
+
+.tabs a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--home-sage);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
+
+/* Hero */
+
+.hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px 96px;
+  text-align: center;
+}
+
+.headline {
+  margin: 0;
+  font-family: var(--font-home-figtree), sans-serif;
+  font-weight: 600;
+  font-size: clamp(30px, 7.2vw, 112px);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  white-space: nowrap;
+  color: var(--home-ink);
+}
+
+.line {
+  display: inline;
+}
+
+.slash {
+  padding: 0 0.08em;
+  font-weight: 500;
+  color: var(--home-sage);
+}
+
+.lede {
+  max-width: 50ch;
+  margin: clamp(28px, 4vw, 44px) 0 0;
+  font-family: var(--font-home-inter), sans-serif;
+  font-weight: 300;
+  font-size: clamp(19px, 1.75vw, 25px);
+  line-height: 1.5;
+  text-wrap: balance;
+  color: var(--home-ink);
+}
+
+.cta {
+  margin-top: 32px;
+  font-family: var(--font-home-inter), sans-serif;
+  font-weight: 300;
+  font-size: clamp(19px, 1.75vw, 25px);
+  line-height: 1.5;
+  color: var(--home-ink);
+  text-decoration: underline;
+  text-decoration-color: var(--home-sage);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 7px;
+}
+
+.cta:hover {
+  text-decoration-color: var(--home-ink);
+}
+
+/* Mobile */
+
+@media (max-width: 640px) {
+  .bar {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 18px;
+    padding: 24px;
+  }
+
+  .tabs {
+    gap: 24px;
+  }
+
+  .tabs a {
+    font-size: 16px;
+  }
+
+  .line {
+    display: block;
+  }
+
+  .slash {
+    display: none;
+  }
+}
