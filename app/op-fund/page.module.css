@@ -1,0 +1,265 @@
+/* OP Fund page only. Top bar mirrors app/studio/page.module.css.
+   The split is full-bleed, so safe-area insets are added to the bar and pane
+   padding instead of the page wrapper (identical values when insets are 0). */
+
+.page {
+  --fund-cream: #f6f2e7;
+  --fund-ink: #1b1a14;
+  --fund-sage: #aec0ac;
+  --fund-label: #7d9481;
+
+  --sa-top: env(safe-area-inset-top, 0px);
+  --sa-right: env(safe-area-inset-right, 0px);
+  --sa-bottom: env(safe-area-inset-bottom, 0px);
+  --sa-left: env(safe-area-inset-left, 0px);
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding-top: var(--sa-top);
+  background: var(--fund-cream);
+  color: var(--fund-ink);
+  font-family: var(--font-fund-inter), sans-serif;
+  font-weight: 300;
+  text-align: left;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* OP Fund only: hide the shared site footer and match the body to the cream page. */
+:global(body):has(.page) {
+  background: #f6f2e7;
+}
+
+:global(body):has(.page) > :global(footer) {
+  display: none;
+}
+
+.page a:focus-visible {
+  outline: 2px solid var(--fund-ink);
+  outline-offset: 4px;
+}
+
+/* Top bar */
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 32px calc(48px + var(--sa-right)) 32px calc(48px + var(--sa-left));
+}
+
+.wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-fund-inter), sans-serif;
+  font-weight: 800;
+  font-size: 17px;
+  letter-spacing: 0.32em;
+  line-height: 1;
+  color: var(--fund-ink);
+  text-decoration: none;
+}
+
+.wordmark svg {
+  display: block;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tabs a {
+  font-family: var(--font-fund-inter), sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.2;
+  color: var(--fund-ink);
+  text-decoration: none;
+}
+
+.tabs a:hover,
+.tabs a[aria-current="page"] {
+  text-decoration: underline;
+  text-decoration-color: var(--fund-sage);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
+
+/* Split */
+
+.split {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+}
+
+.split a:focus-visible {
+  outline: 2px solid var(--fund-ink);
+  outline-offset: 3px;
+}
+
+.sage,
+.cream {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding-top: clamp(48px, 7vh, 96px);
+  padding-bottom: calc(clamp(48px, 7vh, 96px) + var(--sa-bottom));
+}
+
+.sage {
+  justify-content: flex-end;
+  padding-left: calc(48px + var(--sa-left));
+  padding-right: 48px;
+  background: var(--fund-sage);
+  color: var(--fund-ink);
+}
+
+.cream {
+  justify-content: center;
+  gap: 40px;
+  padding-left: 48px;
+  padding-right: calc(48px + var(--sa-right));
+  background: var(--fund-cream);
+  color: var(--fund-ink);
+}
+
+.headline {
+  margin: 0;
+  font-family: var(--font-fund-figtree), sans-serif;
+  font-weight: 600;
+  font-size: clamp(30px, 6.4vw, 104px);
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.lede {
+  max-width: 34ch;
+  margin: 0;
+  font-family: var(--font-fund-inter), sans-serif;
+  font-weight: 300;
+  font-size: clamp(20px, 1.7vw, 26px);
+  line-height: 1.5;
+}
+
+.body {
+  max-width: 46ch;
+  margin: 0;
+  font-family: var(--font-fund-inter), sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+}
+
+.itemTitle {
+  margin: 0;
+  font-family: var(--font-fund-figtree), sans-serif;
+  font-weight: 600;
+  font-size: clamp(22px, 1.8vw, 28px);
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+}
+
+.itemText {
+  margin: 6px 0 0;
+  font-family: var(--font-fund-inter), sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.contactLine {
+  margin: 0;
+}
+
+.contact {
+  font-family: var(--font-fund-inter), sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--fund-ink);
+  text-decoration: underline;
+  text-decoration-color: var(--fund-label);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
+
+.contact:hover {
+  text-decoration-color: var(--fund-ink);
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .split {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto 1fr;
+  }
+
+  .sage {
+    min-height: 260px;
+    padding-bottom: clamp(48px, 7vh, 96px);
+    padding-right: calc(48px + var(--sa-right));
+  }
+
+  .cream {
+    padding-left: calc(48px + var(--sa-left));
+  }
+
+  .items {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 640px) {
+  .bar {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 18px;
+    padding: 24px calc(24px + var(--sa-right)) 24px calc(24px + var(--sa-left));
+  }
+
+  .tabs {
+    gap: 24px;
+  }
+
+  .tabs a {
+    font-size: 16px;
+  }
+
+  .sage,
+  .cream {
+    padding-top: 48px;
+    padding-left: calc(24px + var(--sa-left));
+    padding-right: calc(24px + var(--sa-right));
+  }
+
+  .sage {
+    padding-bottom: 48px;
+  }
+
+  .cream {
+    padding-bottom: calc(48px + var(--sa-bottom));
+  }
+}
