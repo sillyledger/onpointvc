@@ -116,9 +116,9 @@
   margin: 0;
   font-family: var(--font-contact-figtree), sans-serif;
   font-weight: 600;
-  font-size: clamp(40px, 4.2vw, 64px);
-  line-height: 1.05;
-  letter-spacing: -0.025em;
+  font-size: clamp(30px, 7.2vw, 112px);
+  line-height: 1;
+  letter-spacing: -0.03em;
   color: var(--contact-ink);
 }
 
