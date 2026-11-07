@@ -22,6 +22,7 @@ export const viewport: Viewport = {
 };
 
 const tabs = [
+  { href: "/thesis", label: "Thesis" },
   { href: "/op-fund", label: "Fund" },
   { href: "/studio", label: "Studio" },
   { href: "/absurdity-projects", label: "Absurdity" },
