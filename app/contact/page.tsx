@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import Link from "next/link";
 import { Figtree, Inter } from "next/font/google";
+import { CopyEmail } from "./CopyEmail";
 import styles from "./page.module.css";
 
 // Contact-only fonts, matching the homepage.
@@ -12,7 +13,7 @@ const figtree = Figtree({
 
 const inter = Inter({
   variable: "--font-contact-inter",
-  weight: ["300", "800"],
+  weight: ["300", "400", "500", "800"],
   subsets: ["latin"],
 });
 
@@ -30,6 +31,15 @@ const tabs = [
   { href: "/studio", label: "Studio" },
   { href: "/absurdity-projects", label: "Absurdity" },
   { href: "/contact", label: "Contact" },
+];
+
+const EMAIL = "p@ryoka.xyz";
+
+const subjects = [
+  { subject: "Studio", description: "Brands and software" },
+  { subject: "Absurdity", description: "Absurdity Projects" },
+  { subject: "Acquisition", description: "Acquisitions" },
+  { subject: "General", description: "Everything else" },
 ];
 
 export default function Contact() {
@@ -61,24 +71,57 @@ export default function Contact() {
         </nav>
       </header>
       <main className={styles.main}>
-        <div className={styles.grid}>
-          <div>
-            <h1 className={styles.headline}>Let&apos;s talk.</h1>
-            <p className={styles.lede}>
-              Based in Taichung, backing founders everywhere.
-            </p>
-          </div>
-          <div className={styles.right}>
-            <a className={styles.email} href="mailto:p@ryoka.xyz">
-              p@ryoka.xyz
-            </a>
-            <p className={styles.note}>
-              Pitches, portfolio and everything else.{" "}
-              <a className={styles.inlineLink} href="https://ryokagroup.com">
-                Ryoka Group
-              </a>{" "}
-              is our parent company, so it all runs through one inbox there.
-            </p>
+        <div className={styles.wrap}>
+          <h1 className={styles.headline}>Contact</h1>
+          <p className={styles.lede}>
+            One inbox for the whole firm. Use a subject line so it reaches the
+            right place.
+          </p>
+
+          <div className={styles.panel}>
+            <section>
+              <h2 className={styles.label}>Email</h2>
+              <div className={styles.emailRow}>
+                <a className={styles.email} href={`mailto:${EMAIL}`}>
+                  {EMAIL}
+                </a>
+                <CopyEmail email={EMAIL} />
+              </div>
+              <p className={styles.emailNote}>
+                Studio, Absurdity Projects, acquisitions and everything else.
+              </p>
+            </section>
+
+            <section>
+              <h2 className={styles.label}>Subject lines</h2>
+              <ul className={styles.subjects}>
+                {subjects.map((row) => (
+                  <li key={row.subject}>
+                    <a
+                      className={styles.subjectLink}
+                      href={`mailto:${EMAIL}?subject=${encodeURIComponent(row.subject)}`}
+                    >
+                      <span className={styles.subject}>{row.subject}</span>
+                      {"  "}
+                      <span className={styles.subjectDesc}>
+                        {row.description}
+                      </span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+
+            <section>
+              <h2 className={styles.label}>Group</h2>
+              <p className={styles.body}>
+                OnPoint VC is part of{" "}
+                <a className={styles.inlineLink} href="https://ryokagroup.com">
+                  Ryoka Group
+                </a>
+                , which is why mail runs through a ryoka.xyz address.
+              </p>
+            </section>
           </div>
         </div>
       </main>
