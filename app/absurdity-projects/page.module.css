@@ -1,0 +1,353 @@
+/* Absurdity Projects page only. Top bar and page setup mirror app/studio/page.module.css. */
+
+.page {
+  --absurdity-cream: #f6f2e7;
+  --absurdity-card: #ede7d7;
+  --absurdity-ink: #1b1a14;
+  --absurdity-sage: #aec0ac;
+  --absurdity-label: #7d9481;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  padding-left: env(safe-area-inset-left, 0px);
+  padding-right: env(safe-area-inset-right, 0px);
+  background: var(--absurdity-cream);
+  color: var(--absurdity-ink);
+  font-family: var(--font-absurdity-inter), sans-serif;
+  font-weight: 300;
+  text-align: left;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Absurdity only: hide the shared site footer and match the body to the cream page. */
+:global(body):has(.page) {
+  background: #f6f2e7;
+}
+
+:global(body):has(.page) > :global(footer) {
+  display: none;
+}
+
+.page a:focus-visible {
+  outline: 2px solid var(--absurdity-ink);
+  outline-offset: 4px;
+}
+
+/* Top bar */
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 32px 48px;
+}
+
+.wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-absurdity-inter), sans-serif;
+  font-weight: 800;
+  font-size: 17px;
+  letter-spacing: 0.32em;
+  line-height: 1;
+  color: var(--absurdity-ink);
+  text-decoration: none;
+}
+
+.wordmark svg {
+  display: block;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tabs a {
+  font-family: var(--font-absurdity-inter), sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.2;
+  color: var(--absurdity-ink);
+  text-decoration: none;
+}
+
+.tabs a:hover,
+.tabs a[aria-current="page"] {
+  text-decoration: underline;
+  text-decoration-color: var(--absurdity-sage);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
+
+/* Content */
+
+.main {
+  flex: 1;
+  padding: clamp(56px, 10vh, 120px) 48px 96px;
+}
+
+.main a:focus-visible {
+  outline: 2px solid var(--absurdity-ink);
+  outline-offset: 3px;
+}
+
+.wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.headline {
+  margin: 0;
+  font-family: var(--font-absurdity-figtree), sans-serif;
+  font-weight: 600;
+  font-size: clamp(30px, 7.2vw, 112px);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--absurdity-ink);
+}
+
+.lede {
+  max-width: 54ch;
+  margin: clamp(28px, 3vw, 44px) 0 0;
+  font-family: var(--font-absurdity-inter), sans-serif;
+  font-weight: 300;
+  font-size: clamp(20px, 1.7vw, 25px);
+  line-height: 1.5;
+  color: var(--absurdity-ink);
+}
+
+.label {
+  margin: 0 0 20px;
+  font-family: var(--font-absurdity-inter), sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.3;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--absurdity-label);
+}
+
+/* Status pills */
+
+.pill {
+  align-self: flex-start;
+  padding: 6px 11px;
+  border-radius: 999px;
+  font-family: var(--font-absurdity-inter), sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.pillLive {
+  background: var(--absurdity-cream);
+  color: var(--absurdity-ink);
+}
+
+.pillBuild {
+  background: transparent;
+  color: var(--absurdity-ink);
+  box-shadow: inset 0 0 0 1px rgba(27, 26, 20, 0.35);
+}
+
+.arrow {
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+/* Live: featured panel */
+
+.live {
+  margin-top: clamp(72px, 10vh, 120px);
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  overflow: hidden;
+  border-radius: 24px;
+  background: var(--absurdity-ink);
+  color: var(--absurdity-cream);
+  text-decoration: none;
+  transition: background-color 0.25s;
+}
+
+.feature:hover {
+  background: #2c3a32;
+}
+
+.feature:hover .arrow {
+  transform: translateX(4px);
+}
+
+.featureArt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 340px;
+  padding: 32px;
+  background: rgba(246, 242, 231, 0.06);
+  font-family: var(--font-absurdity-figtree), sans-serif;
+  font-weight: 600;
+  font-size: clamp(40px, 4.4vw, 68px);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  text-align: center;
+}
+
+.featureBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  padding: clamp(32px, 4vw, 56px);
+}
+
+.featureName {
+  margin: 0;
+  font-family: var(--font-absurdity-figtree), sans-serif;
+  font-weight: 600;
+  font-size: clamp(30px, 2.8vw, 44px);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.featureText {
+  max-width: 38ch;
+  margin: 0;
+  font-family: var(--font-absurdity-inter), sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+.featureDomain {
+  margin: 0;
+  font-family: var(--font-absurdity-inter), sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.4;
+  color: var(--absurdity-sage);
+}
+
+/* In build: cards */
+
+.building {
+  margin-top: clamp(56px, 8vh, 88px);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cards > li {
+  display: flex;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+  min-height: 200px;
+  padding: 32px;
+  border-radius: 20px;
+  background: var(--absurdity-card);
+  color: var(--absurdity-ink);
+}
+
+.cardLink {
+  text-decoration: none;
+}
+
+.cardLink:hover .arrow {
+  transform: translateX(4px);
+}
+
+.cardName {
+  margin: 0;
+  font-family: var(--font-absurdity-figtree), sans-serif;
+  font-weight: 600;
+  font-size: clamp(26px, 2.2vw, 34px);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.cardDomain {
+  margin: 0;
+  font-family: var(--font-absurdity-inter), sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.4;
+  color: rgba(27, 26, 20, 0.5);
+}
+
+.cardDescription {
+  margin: auto 0 0;
+  font-family: var(--font-absurdity-inter), sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .feature {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .featureArt {
+    min-height: 220px;
+  }
+
+  .cards {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 640px) {
+  .bar {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 18px;
+    padding: 24px;
+  }
+
+  .tabs {
+    gap: 24px;
+  }
+
+  .tabs a {
+    font-size: 16px;
+  }
+
+  .main {
+    padding: 48px 24px 72px;
+  }
+}
