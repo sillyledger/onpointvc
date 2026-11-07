@@ -220,15 +220,6 @@
   padding: clamp(32px, 4vw, 56px);
 }
 
-.featureName {
-  margin: 0;
-  font-family: var(--font-absurdity-figtree), sans-serif;
-  font-weight: 600;
-  font-size: clamp(30px, 2.8vw, 44px);
-  line-height: 1.05;
-  letter-spacing: -0.02em;
-}
-
 .featureText {
   max-width: 38ch;
   margin: 0;

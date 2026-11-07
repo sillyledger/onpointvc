@@ -121,14 +121,13 @@ export default function AbsurdityProjects() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className={styles.featureArt} aria-hidden="true">
+              <div className={styles.featureArt}>
                 Stupid Hit
               </div>
               <div className={styles.featureBody}>
                 <span className={`${styles.pill} ${styles.pillLive}`}>
                   Live
                 </span>
-                <h2 className={styles.featureName}>Stupid Hit</h2>
                 <p className={styles.featureText}>
                   The 2am idea nobody talked us out of. Built on a 19-year-old
                   domain.
